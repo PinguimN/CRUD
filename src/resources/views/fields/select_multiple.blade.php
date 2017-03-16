@@ -8,8 +8,8 @@
         @include('crud::inc.field_attributes')
     	multiple>
 
-		@if (isset($field['allows_null']) && $field['allows_null'])
-    		<option value="">-</option>
+		@if (!isset($field['allows_null']) || $field['allows_null'])
+			<option value="">-</option>
 		@endif
 
     	@if (isset($field['model']))
