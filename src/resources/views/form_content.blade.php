@@ -100,4 +100,6 @@
 
       });
     </script>
+
+    @parent
 @endsection
